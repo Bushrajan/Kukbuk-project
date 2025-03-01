@@ -27,21 +27,21 @@ onAuthStateChanged(auth, async (user) => {
 
     if (userSnap.exists()) {
       const userData = userSnap.data();
-      
+
       if (usernameElement) {
         usernameElement.textContent = userData.username || "Jane Doe";
         userTag.textContent = userData.category || "Masterrrr Chef";
       }
 
       if (userPic) {
-        userPic.src = userData.profileImage || "../assets/logo&profiles/user.png";
+        userPic.src = userData.profileImage || "/public-src/Assets/Homepage/assets/logo&profiles/user.png";
       }
     } else {
       if (usernameElement) {
         usernameElement.textContent = "Jane Doe";
       }
       if (userPic) {
-        userPic.src = "../assets/logo&profiles/user.png";
+        userPic.src = "/public-src/Assets/Homepage/assets/logo&profiles/user.png";
       }
     }
   } else {
@@ -54,7 +54,7 @@ onAuthStateChanged(auth, async (user) => {
       usernameElement.textContent = "Guest";
     }
     if (userPic) {
-      userPic.src = "../assets/logo&profiles/user.png";
+      userPic.src = "/public-src/Assets/Homepage/assets/logo&profiles/user.png";
     }
   }
 });
@@ -111,7 +111,7 @@ function displayRecipesWithPagination() {
 }
 
 function displayRecipes(data) {
-    const recipesContainer = document.querySelector(".recipes_cards_display");
+  const recipesContainer = document.querySelector(".recipes_cards_display");
   recipesContainer.innerHTML = "";
 
   data.forEach((recipe) => {
@@ -123,11 +123,11 @@ function displayRecipes(data) {
                         <div class="rating">
                         ${recipe.rating || "★★★★☆"}
                         </div>
-                        <div class="chef">
-                            <img src="https://via.placeholder.com/40" alt="Chef">
-                            <span>John Doe</span>
+                        <div class="chef" style="margin-top:  7px;">
+                          <img src="/public-src/Assets/all-recipes/images/chef-pic12(1).png" alt="Chef">
+                        <span>Sofie</span>
                         </div>
-                        <button class="recipe_btn" onclick="viewRecipe(${recipe.id})"><i class="fa-solid fa-arrow-right"></i> View Recipe</button>
+                        <button class="recipe_btn" onclick="window.open('/public-src/Assets/all-recipes/html/fullView.html')">Comment here <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                     <img src="${recipe.image}" class="recipe_img">`;
 
@@ -168,8 +168,8 @@ function filterRecipesByCuisine() {
   const cuisine = document.getElementById("cuisine").value.toLowerCase();
   filteredRecipes = cuisine
     ? allRecipes.filter(
-        (recipe) => recipe.cuisine && recipe.cuisine.toLowerCase() === cuisine
-      )
+      (recipe) => recipe.cuisine && recipe.cuisine.toLowerCase() === cuisine
+    )
     : allRecipes;
   currentPage = 1;
   displayRecipesWithPagination();

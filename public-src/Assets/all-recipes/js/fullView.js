@@ -21,17 +21,12 @@ async function getRecipeDetail() {
     console.log("Fetched Recipe Data:", recipe);
 
     // Populate HTML with API Data
-    document.getElementById("recipe-name").textContent =
-      recipe.name || "Unknown Recipe";
-    document.getElementById("recipe-image").src =
-      recipe.image || "https://via.placeholder.com/800";
-    document.getElementById("chef-name").textContent =
-      recipe.chef || "Unknown Chef";
-    document.getElementById("upload-time").textContent =
-      recipe.uploadTime || "Recently Uploaded";
-    document.getElementById("comments").textContent = `Comments: ${
-      recipe.reviewCount || "No comments yet"
-    }`;
+    document.getElementById("recipe-name").textContent = recipe.name || "Unknown Recipe";
+    document.getElementById("recipe-image").src = recipe.image || "/public-src/Assets/Homepage/assets/logo&profiles/chef-pic12(1).png";
+    document.getElementById("chef-name").textContent = recipe.chef || "Unknown Chef";
+    document.getElementById("upload-time").textContent = recipe.uploadTime || "Recently Uploaded";
+    document.getElementById("comments").textContent = `Comments: ${ recipe.reviewCount || "No comments yet" }`;
+
     document.getElementById("rating").textContent = `Rating: ${
       recipe.rating || "★★★★☆"
     }`;
@@ -42,7 +37,7 @@ async function getRecipeDetail() {
       ? `${recipe.prepTimeMinutes} min`
       : "N/A";
     document.getElementById("calories").textContent = recipe.caloriesPerServing
-      ? `${recipe.caloriesPerServing} kcal`
+      ? `${recipe.caloriesPerServing} cal`
       : "Calories not available";
     // Populate Ingredients List
     const ingredientsList = document.getElementById("ingredients");
