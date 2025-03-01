@@ -127,7 +127,9 @@ function displayRecipes(data) {
                           <img src="/public-src/Assets/all-recipes/images/chef-pic12(1).png" alt="Chef">
                         <span>Sofie</span>
                         </div>
-                        <button class="recipe_btn" onclick="window.open('/public-src/Assets/all-recipes/html/fullView.html')">Comment here <i class="fa-solid fa-arrow-right"></i></button>
+                        
+                        <button class="recipe_btn"><a href="/public-src/Assets/all-recipes/html/fullview.html"
+                                    style="color: white; text-decoration: none;">Comment here <i class="fa-solid fa-arrow-right"></i></a></button>
                     </div>
                     <img src="${recipe.image}" class="recipe_img">`;
 
