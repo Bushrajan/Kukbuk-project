@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+  scroll-behavior: smooth !important;
+  text-decoration: none !important;
+}
+
+:root {
+  --red: rgb(232, 20, 9) !important;
+  --orange: #e86209 !important;
+  color: black !important;
+  --placeholder: rgba(128, 128, 128, 0.139) !important;
+  --hover: var(--red) !important;
+  --primary-color: #e81409 !important;
+  --secondary-color: #e86209 !important;
+  --gradient-color: radial-gradient(circle,
+      #e86209 25%,
+      #e81409 75%) !important;
+  --headings-color: #2f1f21 !important;
+  --background-color: #eaeaea !important;
+  --black-tint1: #363636 !important;
+  --black-tint2: #6d6d6d !important;
+  --black-tint3: #a3a3a3 !important;
+  --black-tint4: #c3c3c3 !important;
+  --white-color: #ffffff !important;
+  --box-shadow: 1px 4px 5px #c3c3c3 !important;
+}
+
+body {
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
+
+.maincontainer {
+  width: 100% !important;
+}
+
+.maincontainer .firstchild {
+  width: 100% !important;
+  overflow-x: hidden !important;
+  position: relative !important;
+}
+
+.maincontainer .secondchild {
+  overflow-x: hidden !important;
+  position: relative !important;
+  width: 100% !important;
+}
+
+.images {
+  width: 100% !important;
+  top: 0 !important;
+  display: flex !important;
+  animation: scroll 15s linear infinite !important;
+}
+
+.images img {
+  width: 200px !important;
+  height: 200px !important;
+  margin: 0 auto !important;
+}
+
+/* horizonta scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/********* scrollbar css ************/
+::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888 !important;
+  border-radius: 10px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555 !important;
+}
+
+
+/***********************************/
+
+h1 {
+  font-size: 2rem !important;
+  font-style: oblique !important;
+  font-family: 'Inknut Antiqua', serif !important;
+  color: var(--headings-color) !important;
+  margin-bottom: 1rem !important;
+}
+
+.h2 {
+  font-size: 26px;
+  font-family: 'Inknut Antiqua', serif !important;
+  color: var(--red) !important;
+}
+
+.h4 {
+  font-family: 'Inknut Antiqua', serif !important;
+  color: var(--red) !important;
+}
+
+#image {
+  display: none !important;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.checkbox {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.RecipeCategorypara {
+  font-size: 18px !important;
+  margin-left: 20px !important;
+}
+
+/***************** checkbox bootstrap css ****************/
+.form-control {
+  border: none !important;
+  border-bottom: 2px solid #ff9900 !important;
+  border-radius: 0 !important;
+}
+
+
+.form-control input {
+  all: unset !important;
+}
+
+.form-control,
+.input-group input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> ba6ce70e3e6a3d5ae32a42074befe7e166d5f123
+.input-group input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.form-check-input {
+  width: 17px !important;
+  height: 17px !important;
+  border: 2px solid #ff9900 !important;
+  transition: border-color 0.3s ease-in-out !important;
+}
+
+.form-check-input:checked {
+  background-color: #ff9900 !important;
+  border-color: #ff9900 !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px !important;
+}
+
+
+.form-control {
+  border-bottom: 2px solid #ff9900 !important;
+}
+
+
+.font {
+  font-weight: 500 !important;
+}
+
+
+.edit {
+  border: none !important;
+}
+
+.editimg {
+  width: 15px !important;
+  height: 15px !important;
+  cursor: pointer !important;
+}
+
+.Ingredient {
+  border-radius: 5px !important;
+  border: 2px solid #ff9900 !important;
+}
+
+.button {
+  background-color: var(--orange) !important;
+}
+
+.button:hover {
+  background-color: var(--orange) !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px !important;
+}
+
+
+.delimg {
+  width: 15px !important;
+  height: 15px !important;
+  cursor: pointer !important;
+}
+
+.Additional {
+  width: 200px !important;
+  border-radius: 15px !important;
+  background-color: rgba(128, 128, 128, 0.193);
+}
+
+.Additional:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px !important;
+}
+
+
+.add {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: var(--orange) !important;
+}
+
+.add:hover {
+  background-color: var(--orange) !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px !important;
+}
+
+/* ------------------------------------ */
+.submitbtn {
+  width: 200px !important;
+  height: 40px !important;
+  background-color: var(--orange) !important;
+  border-radius: 16px 0px 16px 0px !important;
+}
+
+.submitbtn:hover {
+  background-color: var(--orange) !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px !important;
+}
+
+.checkimg {
+  width: 40px !important;
+  height: 40px !important;
+  margin: 0 auto !important;
+  animation: flip 1s forwards !important;
+  display: none;
+}
+
+.fas,
+.fab {
+  font-size: 30px !important;
+  color: var(--orange) !important;
+  margin-bottom: 20px !important;
+}
+
+.fas,
+.fab:hover {
+  transform: scale(1.4) !important;
+  transition: transform 0.2s !important;
+}
+
+/******************* popup box  css **********************/
+.popbox {
+  width: 400px !important;
+  border-radius: 10px !important;
+  border: 1px solid var(--orange) !important;
+  border-radius: 16px 0px 16px 0px !important;
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  background-color: white !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  z-index: 1000 !important;
+}
+
+.btn-close {
+  float: right !important;
+}
+
+.backgroundpopupbox {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  margin: 0 auto !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: rgba(0, 0, 0, 0.883) !important;
+  z-index: 1000 !important;
+  overflow: hidden !important;
+  display: none;
+}
+
+.textarea1 .span {
+  width: 100% !important;
+  height: 50px !important;
+  display: flex !important;
+  justify-items: center !important;
+  align-items: center !important;
+}
+
+.textarea {
+  width: 100% !important;
+  height: 80px !important;
+  margin: 0 auto !important;
+  margin: 5px !important;
+  display: flex !important;
+  justify-items: center !important;
+  align-items: center !important;
+}
+
+
+.fas {
+  padding-top: 10px !important;
+  font-size: 15px !important;
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.imgcontainer {
+  min-height: 200px !important;
+  background-color: #8080803c !important;
+}
+
+input {
+  margin-bottom: 20px !important;
+}
+
+.button {
+  width: 200px !important;
+  font-size: 13px !important;
+  font-weight: bold !important;
+}
+
+/* -------------------------------------------- */
+
+
+/* -------------------------------------------- */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxx media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxx media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxx media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxx media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+@media (max-width: 1025px) {
+  input {
+    margin-bottom: 20px !important;
+  }
+
+  .button {
+    font-size: 14px !important;
+    width: 250px !important;
+    padding: 5px !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .header nav .logo {
+    width: 6rem;
+  }
+
+  .header nav .nav_links {
+    display: none;
+  }
+
+  .header .hamburger {
+    display: flex;
+  }
+
+  .header nav .nav_links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--white-color);
+    height: 100vh;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .header nav .nav_links a {
+    padding: 1rem;
+  }
+
+  input {
+    margin-bottom: 20px !important;
+  }
+
+  .button {
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 1025px) {
+  .swiper {
+    width: 100%;
+    height: 60vh;
+  }
+
+  video {
+    width: 100%;
+    height: 60vh !important;
+    object-fit: cover !important;
+    margin-bottom: 40px !important;
+  }
+
+  .firstcard {
+    width: 97% !important;
+    min-height: 100vh !important;
+    border-radius: 15px !important;
+    margin: 10px !important;
+  }
+
+  input {
+    margin-bottom: 20px !important;
+  }
+
+  .button {
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 713px) {
+  .popbox {
+    width: 400px !important;
+  }
+
+  .swiper {
+    width: 100% !important;
+    height: 80vh !important;
+  }
+
+  video {
+    width: 100% !important;
+    height: 40vh !important;
+    object-fit: cover !important;
+    margin-bottom: 30px !important;
+  }
+
+
+  .Meal-Ctegory-card {
+    width: 460px;
+    height: 400px;
+    padding: 20px !important;
+    padding-top: 40px;
+    margin-bottom: 14% !important;
+  }
+
+  .meal-card-img {
+    width: 120px;
+    height: 120px;
+    left: 150px !important;
+    top: 20px;
+  }
+
+  .meal-card-imgdiv {
+    width: 135px !important;
+    height: 135px !important;
+    left: 125px;
+    top: -71px;
+  }
+
+  .carddiv .card-1 {
+    max-width: 90% !important;
+    min-height: 400px !important;
+  }
+
+  input {
+    margin-bottom: 20px !important;
+  }
+
+  .button {
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .carousel-item img {
+    width: 100% !important;
+    height: 300px !important;
+    border-radius: 15px !important;
+  }
+
+  .carddiv .card-1 img {
+    padding-bottom: 20px !important;
+    width: 100% !important;
+    height: 293px !important;
+  }
+
+  video {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+
+  input {
+    margin-bottom: 20px !important;
+  }
+
+  .button {
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 426px) {
+  .popbox {
+    margin: 0 auto !important;
+    width: 260px !important;
+    padding: 20px !important;
+  }
+
+  video {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+
+  .Meal-Ctegory-card {
+    max-width: 400px;
+    min-height: 405px;
+    padding: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 35% !important;
+  }
+
+  .meal-card-imgdiv {
+    width: 165px !important;
+    height: 165px !important;
+    left: 80px;
+    top: -110px;
+  }
+
+  .meal-card-img {
+    width: 150px;
+    height: 150px;
+    left: 105px !important;
+    top: -20px !important;
+  }
+
+  input {
+    margin-bottom: 20px !important;
+  }
+
+  .button {
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 321px) {
+  video {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+
+  .Meal-Ctegory-card {
+    margin-bottom: 40% !important;
+  }
+
+  .Meal-Ctegory-card {
+    max-width: 320px;
+    min-height: 420px;
+    padding: 5px !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 35% !important;
+  }
+
+  .meal-card-imgdiv {
+    width: 130px !important;
+    height: 130px !important;
+    left: 50px;
+    top: -78px;
+  }
+
+  .meal-card-img {
+    width: 120px;
+    height: 120px;
+    left: 72px !important;
+    top: 10px !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1rem !important;
+  }
+
+  .form-check-input {
+    width: 15px !important;
+    height: 15px !important;
+  }
+
+  .RecipeCategorypara {
+    font-size: 13px !important;
+  }
+
+  input {
+    margin-bottom: 20px !important;
+  }
+
+  .button {
+    width: 130px !important;
+    font-size: 13px !important;
+    margin: 0 auto !important;
+  }
+
+
+}

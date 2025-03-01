@@ -1,0 +1,456 @@
+/********** Fonts Styling **********/
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap");
+
+/********** Overall Page Styling **********/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--background-color);
+}
+
+/********* scrollbar css ************/
+::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888 !important;
+  border-radius: 10px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555 !important;
+}
+
+:root {
+  --primary-color: #e81409;
+  --secondary-color: #e86209;
+  --gradient-color: radial-gradient(circle, #e86209 15%, #e81409 85%);
+  --headings-color: #2f1f21;
+  --background-color: #eaeaea;
+  --black-tint1: #363636;
+  --black-tint2: #6d6d6d;
+  --black-tint3: #a3a3a3;
+  --black-tint4: #c3c3c3;
+  --white-color: #ffffff;
+  --box-shadow: 1px 4px 5px #c3c3c3;
+  --width-circle: 150vw;
+  --radius: calc(100vw / 6);
+}
+
+h3 {
+  font-family: "inknut antiqua";
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  color: var(--headings-color);
+}
+
+h5 {
+  font-family: "inknut antiqua";
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: var(--headings-color);
+}
+
+p {
+  font-family: "lato";
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--black-tint1);
+}
+
+button {
+  all: unset;
+  background-color: var(--secondary-color);
+  padding: 0.5rem 2rem;
+  display: block;
+  margin: 1rem auto;
+  color: var(--white-color);
+  font-family: "lato";
+  font-size: 0.9rem;
+  border-radius: 1rem 0 1rem 0;
+  cursor: pointer;
+  transition: background 0.4s linear;
+
+  &:hover {
+    background: var(--gradient-color);
+  }
+}
+
+/********** Homepage Navbar Styling **********/
+
+.navbar {
+  padding: 0.4rem 4rem;
+}
+
+.hero_section {
+  width: 100vw;
+  height: 80vh;
+  background-color: var(--black-tint4);
+  margin: 1rem 0 10rem 0;
+}
+
+.hero_section .hero_image {
+  width: 100vw;
+  height: 80vh;
+}
+
+.hero_section .hero_image video {
+  object-fit: cover;
+  object-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+/********** User Profile **********/
+
+.main_profile {
+  position: fixed;
+  right: -40vw;
+  top: 0;
+  z-index: 2000;
+  background-color: var(--white-color);
+  box-shadow: var(--box-shadow);
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem 3rem;
+  transition: right 0.4s linear;
+}
+.main_profile .user_info img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  border: 1px solid var(--secondary-color);
+  border-radius: 50%;
+}
+.main_profile .user_tag {
+  font-family: "lato";
+  color: var(--black-tint2);
+}
+.user_info {
+  text-align: center;
+}
+.main_profile .user_buttons button {
+  all: unset;
+  background-color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  display: block;
+  margin: 2rem 0;
+  width: 100%;
+  color: var(--white-color);
+  font-family: "lato";
+  font-size: 0.9rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: background 0.4s linear;
+}
+.main_profile .user_buttons button:hover {
+  background: var(--gradient-color);
+}
+.main_profile .user_buttons i {
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+}
+.main_profile a {
+  display: block;
+  text-decoration: none;
+  color: var(--headings-color);
+  margin: 1rem 0;
+  font-family: "lato";
+  font-weight: 500;
+}
+.main_profile .fa-close {
+  position: absolute;
+  right: 3rem;
+  top: 4rem;
+  color: var(--black-tint2);
+  font-size: larger;
+}
+/********** Category Styling **********/
+
+main {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.category {
+  margin: 4rem 0;
+}
+
+.category_display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.category_display .category1,
+.category2,
+.category3,
+.category4,
+.category5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category img {
+  width: 9rem;
+  height: 9rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 0.1rem solid var(--secondary-color);
+  margin: 1rem 0;
+}
+
+.category .category_btn {
+  all: unset;
+  border: 0.1rem solid var(--secondary-color);
+  color: var(--secondary-color);
+  font-family: "lato";
+  font-size: 0.8rem;
+  padding: 0.3rem 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background 0.4s linear;
+
+  &:hover {
+    background: var(--gradient-color);
+    color: var(--white-color);
+  }
+}
+
+/********** Recipes Display Styling **********/
+
+.recipes_collection {
+  margin: 4rem 0;
+}
+
+.recipes_filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.recipes_filter .search {
+  border: 0.1rem solid var(--secondary-color);
+  padding: 0.3rem;
+  border-radius: 1rem;
+}
+
+.recipes_filter .search input {
+  all: unset;
+  padding-right: 1.5rem;
+  color: var(--black-tint2);
+  font-family: "lato";
+  font-size: 0.7rem;
+}
+
+.recipes_filter .search i {
+  color: var(--secondary-color);
+  margin: 0 0.5rem;
+}
+
+.recipes_filter .sort {
+  background-color: var(--secondary-color);
+  padding: 0.3rem;
+  border-radius: 1rem;
+}
+
+.recipes_filter .sort select {
+  all: unset;
+  padding-right: 2rem;
+  color: var(--white-color);
+  font-family: "lato";
+  font-size: 0.7rem;
+}
+
+.recipes_filter .sort i {
+  color: var(--white-color);
+  margin: 0 0.5rem;
+  font-size: 0.7rem;
+}
+
+.recipes_cards_display {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem 5rem;
+  margin: 4rem 0;
+}
+
+.recipes_collection .recipe_card {
+  background-color: var(--white-color);
+  box-shadow: var(--box-shadow);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.recipe_card .recipe_content img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 0.1rem solid var(--primary-color);
+  margin-right: 0.5rem;
+}
+
+.recipe_card .recipe_content h5 {
+  margin-bottom: 0.5rem;
+}
+
+.recipe_card .recipe_content .rating i {
+  color: var(--primary-color);
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.recipe_card .recipe_content .chef {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.recipe_card .recipe_img {
+  margin-right: -4rem;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.recipe_card .recipe_btn {
+  all: unset;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-family: "lato";
+  font-size: 0.7rem;
+  padding: 0.3rem 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background 0.4s linear;
+
+  &:hover {
+    background: var(--gradient-color);
+  }
+}
+
+.recipe_card .recipe_btn i {
+  transform: rotate(-45deg);
+  margin-right: 0.2rem;
+}
+
+/********** Recipes Pagination Styling **********/
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 4rem 0;
+}
+
+.pagination button {
+  all: unset;
+  border: 0.1rem solid var(--secondary-color);
+  color: var(--headings-color);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: background 0.4s linear;
+
+  &:hover {
+    background: var(--gradient-color);
+    color: var(--white-color);
+  }
+}
+
+.pagination button.disabled {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  cursor: not-allowed;
+}
+
+/********** Footer Styling **********/
+
+footer {
+  width: 100vw;
+  padding: 4rem;
+  background-color: var(--white-color);
+  box-shadow: var(--box-shadow);
+}
+
+.footer1 {
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
+  align-items: center;
+  gap: 2rem 4rem;
+}
+
+.footer1 .foot_logo img {
+  width: 10rem;
+}
+
+.footer1 .foot_image {
+  width: 35vw;
+}
+
+.footer1 .foot_links h6,
+.foot_legal h6 {
+  margin-bottom: 0.5rem;
+}
+
+.footer1 .foot_links a,
+.foot_legal a {
+  display: block;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-family: "lato";
+  color: var(--black-tint2);
+  padding: 0.3rem 0;
+}
+
+.footer2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.footer2 .copy_text {
+  font-family: "lato";
+}
+
+.footer2 .social_icons i {
+  color: var(--primary-color);
+  margin: 0 0.4rem;
+  font-size: 1.1rem;
+}

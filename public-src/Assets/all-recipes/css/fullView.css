@@ -1,0 +1,427 @@
+/********** Fonts Styling **********/
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap");
+
+/********** Overall Page Styling **********/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--background-color);
+}
+
+/********* scrollbar css ************/
+::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888 !important;
+  border-radius: 10px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555 !important;
+}
+
+:root {
+  --primary-color: #e81409;
+  --secondary-color: #e86209;
+  --gradient-color: radial-gradient(circle, #e86209 15%, #e81409 85%);
+  --headings-color: #2f1f21;
+  --background-color: #eaeaea;
+  --black-tint1: #363636;
+  --black-tint2: #6d6d6d;
+  --black-tint3: #a3a3a3;
+  --black-tint4: #c3c3c3;
+  --white-color: #ffffff;
+  --box-shadow: 1px 4px 5px #c3c3c3;
+}
+
+h1 {
+  font-family: "inknut antiqua";
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: var(--headings-color);
+}
+
+h2 {
+  font-family: "lato";
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: var(--secondary-color);
+}
+
+h3 {
+  font-family: "inknut antiqua";
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  color: var(--headings-color);
+}
+
+h4 {
+  font-family: "inknut antiqua";
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: var(--headings-color);
+}
+
+h5 {
+  font-family: "inknut antiqua";
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: var(--headings-color);
+}
+
+h6 {
+  font-family: "lato";
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: var(--headings-color);
+}
+
+p {
+  font-family: "lato";
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--black-tint1);
+}
+
+button {
+  all: unset;
+  background-color: var(--secondary-color);
+  padding: 0.5rem 2rem;
+  display: block;
+  margin: 1rem auto;
+  color: var(--white-color);
+  font-family: "lato";
+  font-size: 0.9rem;
+  border-radius: 1rem 0 1rem 0;
+  cursor: pointer;
+  transition: background 0.4s linear;
+
+  &:hover {
+    background: var(--gradient-color);
+  }
+}
+
+/******** Full Recipe View ********/
+
+.navbar {
+  padding: 0.4rem 4rem;
+  box-shadow: var(--box-shadow);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+}
+
+.recipe-details {
+  max-width: 1200px;
+  margin: 6rem auto;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+  background-color: #fff;
+  /* margin: 0 auto !important; */
+}
+
+#recipe-image {
+  border: 2px solid var(--secondary-color);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons {
+  font-size: 1.5rem;
+  color: red;
+  display: flex;
+  gap: 10px;
+}
+
+.profile-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 0.1rem solid var(--secondary-color);
+}
+
+.grey-line {
+  height: 1px;
+  background-color: var(--black-tint3);
+  margin: 10px 0;
+}
+
+.recipe-details img.banner {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.serving {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prep-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recipe_detail {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 2rem 0;
+}
+
+.recipe_detail ul,
+ol {
+  padding: 1rem 0;
+  list-style-position: inside;
+}
+
+.recipe_detail ul li,
+ol li {
+  font-family: "lato";
+  color: var(--black-tint1);
+  padding: 0.4rem 0;
+}
+
+.recipe_detail ol li::marker {
+  color: var(--secondary-color);
+  font-weight: 500;
+  padding-right: 0.4rem;
+}
+
+.recipe_extra {
+  background-color: var(--white-color);
+  border: 1px solid var(--black-tint3);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 30vw;
+}
+
+/******** Comment Section ********/
+
+.comment_section {
+  width: 90vw;
+  margin: 2rem auto;
+}
+
+.comment-box {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--white-color);
+  border-radius: 0.5rem;
+}
+
+.comment-box h3 {
+  margin-bottom: 10px;
+}
+
+.comment-box textarea {
+  all: unset;
+  width: 100%;
+  height: 6rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--black-tint3);
+  resize: none;
+}
+
+.comment-box button {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.4s linear;
+
+  &:hover {
+    background: var(--gradient-color);
+  }
+}
+
+.comment-list {
+  margin-top: 15px;
+}
+
+.comment {
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.comment small {
+  color: #666;
+  display: block;
+  margin-top: 5px;
+}
+
+.comment-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.comment-actions button {
+  background: none;
+  border: none;
+  color: #ff5733;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.comment-actions button:hover {
+  text-decoration: underline;
+}
+
+textarea::placeholder {
+  color: #888;
+  opacity: 0.8;
+}
+
+.comment-list .comment {
+  display: none;
+}
+
+.comment-list .comment:nth-child(-n + 5) {
+  display: block;
+}
+
+#view-more {
+  display: none;
+  margin-top: 10px;
+  padding: 8px;
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background: var(--gradient-color);
+  }
+}
+
+.prep {
+  padding-top: 8px;
+}
+
+/********** Footer Styling **********/
+
+footer {
+  width: 100vw;
+  padding: 4rem;
+  background-color: var(--white-color);
+  box-shadow: var(--box-shadow);
+}
+
+.footer1 {
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
+  align-items: center;
+  gap: 2rem 4rem;
+}
+
+.footer1 .foot_logo img {
+  width: 10rem;
+}
+
+.footer1 .foot_image {
+  width: 35vw;
+}
+
+.footer1 .foot_links h6,
+.foot_legal h6 {
+  margin-bottom: 0.5rem;
+}
+
+.footer1 .foot_links a,
+.foot_legal a {
+  display: block;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-family: "lato";
+  color: var(--black-tint2);
+  padding: 0.3rem 0;
+}
+
+.footer2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.footer2 .copy_text {
+  font-family: "lato";
+}
+
+.footer2 .social_icons i {
+  color: var(--primary-color);
+  margin: 0 0.4rem;
+  font-size: 1.1rem;
+}

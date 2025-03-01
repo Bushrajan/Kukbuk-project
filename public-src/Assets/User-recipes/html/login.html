@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!--  Css File -->
+    <link rel="stylesheet" href="../css/forms.css">
+    <title>Login page</title>
+    <link rel="shortcut icon" href="../asset/logo_imgs/recipe-logo.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="main">
+        <form class="login_form" id="login-form">
+            <img src="../asset/logo_imgs/User Info.png" alt="User Login" class="profile">
+            <div class="form_inputs">
+                <input type="email" placeholder="Email" id="email">
+                <input type="password" placeholder="Password" id="password">
+            </div>
+            <div class="form_links">
+                <div class="checkbox">
+                    <input class="check_input" type="checkbox" id="checkbox" checked>
+                    <label for="checkbox">Remember Me</label>
+                </div>
+                <a href="#" id="forgot_password">Forgot Password?</a>
+            </div>
+            <div class="google_login">
+                <p>----------Or login with----------</p>
+                <button type="button" id="signinWithGoogle">
+                    <img src="../asset/logo_imgs/google.png" alt="img" width="100">
+                </button>
+            </div>
+            <div class="login_btn">
+                <button type="submit">Login</button>
+            </div>
+            <p class="signup_link">Don't have an account? <a href="./signupPage.html">SignUp</a> here</p>
+        </form>
+    </div>
+
+    <script type="module" src="../js/signup-login.js"></script>
+</body>
+
+</html>

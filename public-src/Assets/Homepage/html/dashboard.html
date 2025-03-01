@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/logo&profiles/recipe-logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <title>Admin Dashboard</title>
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#">Dashboard</a>
+        <a href="#">Users</a>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <h2>Admin Dashboard</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Serial No</th>
+                            <th>User Name</th>
+                            <th>UID</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                            <th>Total Recipes</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>12345</td>
+                            <td>abc@gmail.com</td>
+                            <td>Active</td>
+                            <td>10</td>
+                            <td class="actions">
+                                <button>Edit</button>
+                                <button>Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>67890</td>
+                            <td>abc@gmail.com</td>
+                            <td>Inactive</td>
+                            <td>5</td>
+                            <td class="actions">
+                                <button>Edit</button>
+                                <button>Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/dashboard.js"></script>
+</body>
+
+</html>

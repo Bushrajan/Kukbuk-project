@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public-src/Assets/User-recipes/asset/logo_imgs/recipe-logo.png" type="image/x-icon" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Css File -->
+    <link rel="stylesheet" href="./public-src/Assets/Homepage/css/style.css">
+    <title>Homepage</title>
+</head>
+
+<body>
+    <!---------- Navbar Code ---------->
+    <div class="header">
+        <nav class="navbar1">
+            <div class="socials">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="links">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <button onclick="window.open('./public-src/Assets/User-recipes/html/login.html')" class="login_btn">Login</button>
+                <img src="./public-src/Assets/Homepage/assets/logo&profiles/user.png" class="user_profile">
+            </div>
+        </nav>
+    </div>
+    <div class="header2">
+        <img src="./public-src/Assets/Homepage/assets/logo&profiles/recipe-logo.png" alt="KukBuk" class="logo">
+        <div class="navbar2">
+            <ul class="nav_links">
+                <a href="/index.html">Homepage</a>
+                <a href="./public-src/Assets/all-recipes/html/recipees.html"> Recipes</a>
+                <a href="./public-src/Assets/blog-page/html/about.html">About</a>
+                <a href="./public-src/Assets/blog-page/html/blogs.html">Blogs</a>
+            </ul>
+        </div>
+    </div>
+    <!---------- Hero Section Code ---------->
+    <div class="hero_section">
+        <div class="hero_image">
+            <video src="./public-src/Assets/Homepage/assets/heroSection/hero_header.mp4" autoplay muted loop></video>
+        </div>
+    </div>
+
+    <main>
+        <!---------- Category Code ---------->
+        <section class="category">
+            <div class="category_head">
+                <h3>Popular Categories</h3>
+            </div>
+            <div class="category_display">
+                <div class="category1">
+                    <img src="./public-src/Assets/Homepage/assets/Category/cat1.jpg">
+                    <button class="category_btn">Pizza</button>
+                </div>
+                <div class="category2">
+                    <img src="./public-src/Assets/Homepage/assets/Category/cat2.png">
+                    <button class="category_btn">Pasta</button>
+                </div>
+                <div class="category3">
+                    <img src="./public-src/Assets/Homepage/assets/Category/cat3.jpg">
+                    <button class="category_btn">Vegan</button>
+                </div>
+                <div class="category4">
+                    <img src="./public-src/Assets/Homepage/assets/Category/cat4.jpg">
+                    <button class="category_btn">Dessert</button>
+                </div>
+                <div class="category5">
+                    <img src="./public-src/Assets/Homepage/assets/Category/cat5.jpg">
+                    <button class="category_btn">Drinks</button>
+                </div>
+                <div class="category5">
+                    <img src="./public-src/Assets/Homepage/assets/Category/cat6.jpg">
+                    <button class="category_btn">Soup</button>
+                </div>
+            </div>
+        </section>
+
+        <!---------- All Recipes Code ---------->
+        <section class="recipes_collection">
+            <div class="recipe_head">
+                <h3>Learn, Cook & Eat Food</h3>
+            </div>
+            <section class="recipes_filter">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i><input type="search" placeholder="Search Recipes" id="searchInput">
+                </div>
+
+            </section>
+            <section class="recipes_cards_display">
+                <!-- Dynamic Cards added here -->
+            </section>
+            <button onclick="window.open('./public-src/Assets/all-recipes/html/recipees.html')">See More</button>
+        </section>
+
+        <!---------- All Collections Code ---------->
+        <section class="collections">
+            <div class="collection_head">
+                <h3>Curated Collections</h3>
+            </div>
+            <section class="collection_display">
+                <div class="collection1" style="background-image: url('./public-src/Assets/Homepage/assets/collections/collec1.png');">
+                    <div class="collection_content">
+                        <h5>The ultimate Fizzy Smoothie</h5>
+                        <button onclick="window.open('./public-src/Assets/all-recipes/html/recipees.html')"
+                            class="collection_btn">201 Recipes</button>
+                    </div>
+                </div>
+                <div class="collection2" style="background-image: url('./public-src/Assets/Homepage/assets/collections/collec2.png');">
+                    <div class="collection_content">
+                        <h5>Exquisite Dinner Recipes</h5>
+                        <button onclick="window.open('./public-src/Assets/all-recipes/html/recipees.html')"
+                            class="collection_btn">201 Recipes</button>
+                    </div>
+                </div>
+                <div class="collection3" style="background-image: url('./public-src/Assets/Homepage/assets/collections/collec3.png');">
+                    <div class="collection_content">
+                        <h5>Sushi Combos for Next Party</h5>
+                        <button onclick="window.open('./public-src/Assets/all-recipes/html/recipees.html')"
+                            class="collection_btn">201 Recipes</button>
+                    </div>
+                </div>
+                <div class="collection4" style="background-image: url('./public-src/Assets/Homepage/assets/collections/collec4.png');">
+                    <div class="collection_content">
+                        <h5>The ultimate Cookies Frenzy</h5>
+                        <button onclick="window.open('./public-src/Assets/all-recipes/html/recipees.html')"
+                            class="collection_btn">201 Recipes</button>
+                    </div>
+                </div>
+                <div class="collection5" style="background-image: url('./public-src/Assets/Homepage/assets/collections/collec5.png');">
+                    <div class="collection_content">
+                        <h5>For the love of Creamy Dessert</h5>
+                        <button onclick="window.open('./public-src/Assets/all-recipes/html/recipees.html')"
+                            class="collection_btn">201 Recipes</button>
+                    </div>
+                </div>
+                <div class="collection6" style="background-image: url('./public-src/Assets/Homepage/assets/collections/collec6.png');">
+                    <div class="collection_content">
+                        <h5>Freshness of Healthy Breakfast</h5>
+                        <button onclick="window.open('./public-src/Assets/all-recipes/html/recipees.html')"
+                            class="collection_btn">201 Recipes</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!---------- All Chefs Profile Code ---------->
+        <section class="chefs">
+            <div class="chef_head">
+                <h3>Top Chefs This Week</h3>
+            </div>
+            <section class="chefs_display">
+                <!-- Chef Profiles add dynamically here -->
+            </section>
+            <button onclick="window.open('./public-src/Assets/blog-page/html/about.html')">See More</button>
+        </section>
+        <!---------- Chef Preview Code ---------->
+        <section class="chef_preview">
+            <i class="fa-solid fa-close"></i>
+            <div class="single_profile">
+            </div>
+        </section>
+        <!---------- Top Recipes Code ---------->
+        <section class="top_recipes">
+            <div class="top_recipes_head">
+                <h3>Top Recipes this week</h3>
+            </div>
+            <section class="top_recipes_display">
+                <div class="recipe">
+                    <img src="./public-src/Assets/Homepage/assets/Recipes/recipe3.png" class="recipe_img">
+                    <div class="recipe_content">
+                        <h5>Potatoes Chicken veg</h5>
+                        <small>Vegan</small>
+                        <p>The flavors of mediterrenean are cooked upto 30 minutes in an instant pot for a quick and
+                            filling with swages.</p>
+                        <div class="recipe_links">
+                            <button onclick="window.open('./public-src/Assets/all-recipes/html/fullView.html')">View
+                                Recipe</button>
+                            <div class="recipe_info">
+                                <span><i class="fa-regular fa-heart"></i> 2k Likes</span>
+                                <span><i class="fa-regular fa-message"></i> 243</span>
+                                <span><i class="fa-regular fa-clock"></i> Yesterday</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe">
+                    <img src="./public-src/Assets/Homepage/assets/Recipes/recipe6.png" class="recipe_img">
+                    <div class="recipe_content">
+                        <h5>Ultimate Tomato Purry pasta</h5>
+                        <small>Pasta</small>
+                        <p>The flavors of tomato are mixed with sauces and infused in pasta having the experience of
+                            spicying and food loving.</p>
+                        <div class="recipe_links">
+                            <button onclick="window.open('./public-src/Assets/all-recipes/html/fullView.html')">View
+                                Recipe</button>
+                            <div class="recipe_info">
+                                <span><i class="fa-regular fa-heart"></i> 1.5k Likes</span>
+                                <span><i class="fa-regular fa-message"></i> 345</span>
+                                <span><i class="fa-regular fa-clock"></i> Today</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recipe">
+                    <img src="./public-src/Assets/Homepage/assets/Recipes/recipe9.png" class="recipe_img">
+                    <div class="recipe_content">
+                        <h5>Spicy Reshmi Seekh Kabab</h5>
+                        <small>Non vegan</small>
+                        <p>Taste the love of meat with tender and juicy effect, mixed with all saat masala concept, rich
+                            in healthiness and softness.</p>
+                        <div class="recipe_links">
+                            <button onclick="window.open('./public-src/Assets/all-recipes/html/fullView.html')">View
+                                Recipe</button>
+                            <div class="recipe_info">
+                                <span><i class="fa-regular fa-heart"></i> 2.2k Likes</span>
+                                <span><i class="fa-regular fa-message"></i> 345</span>
+                                <span><i class="fa-regular fa-clock"></i> Yesterday</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!---------- Blogs display Code ---------->
+        <section class="blog_collection">
+            <div class="blog_head">
+                <h3>Popular Topics</h3>
+            </div>
+            <section class="blogs_display">
+                <div class="blog_col">
+                    <a href="./public-src/Assets/blog-page/html/fullBlog.html">
+                        <div class="blog">
+                            <h5>Create Your Diaries</h5>
+                            <img src="./public-src/Assets/Homepage/assets/blogs/blog1.png">
+                        </div>
+                    </a>
+                    <a href="./Assets/blog-page/html/fullBlog.html">
+                        <div class="blog">
+                            <h5>Pour the experience</h5>
+                            <img src="./public-src/Assets/Homepage/assets/blogs/blog2.png">
+                        </div>
+                    </a>
+                </div>
+                <div class="blog_col2">
+                    <a href="./public-src/Assets/blog-page/html/fullBlog.html">
+                        <div class="blog">
+                            <img src="./public-src/Assets/Homepage/assets/blogs/blog3.png">
+                            <small>The Ambiance</small>
+                            <h5>Our Best new arrval for your food entertainment</h5>
+                            <p>The elegancy, the hygiene and the taste in one frame</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog_col">
+                    <a href="./public-src/Assets/blog-page/html/fullBlog.html">
+                        <div class="blog">
+                            <h5>Create Your Diaries</h5>
+                            <img src="./public-src/Assets/Homepage/assets/blogs/blog4.png">
+                        </div>
+                    </a>
+                    <a href="./public-src/Assets/blog-page/html/fullBlog.html">
+                        <div class="blog">
+                            <h5>Create Your Diaries</h5>
+                            <img src="./public-src/Assets/Homepage/assets/blogs/blog5.png">
+                        </div>
+                    </a>
+                </div>
+
+            </section>
+            <button onclick="window.open('./public-src/Assets/blog-page/html/blogs.html')">See more</button>
+        </section>
+        <!---------- Newsletter Code ---------->
+        <section class="newsletter">
+            <h4>Daily Cooking Tips and Recipes To Your Inbox</h4>
+            <div class="input">
+                <input type="text" placeholder="Email">
+                <button class="input_join">Join</button>
+            </div>
+        </section>
+        <!---------- Profile Code ---------->
+        <section class="main_profile">
+            <div class="user_info">
+                <img src="/public-src/Assets/Homepage/assets/logo&profiles/user.png" class="user_pic">
+                <h5 class="username">Jane Doe</h5>
+                <small class="user_tag">Master Chef</small>
+            </div>
+            <div class="user_buttons">
+                <br><br><br>
+                <button onclick="window.open('./public-src/Assets/User-recipes/html/recipeForm.html')" class="add_recipe"><i
+                        class="fa-solid fa-plus"></i> Add new recipe</button>
+                <button onclick="window.open('./public-src/Assets/User-recipes/html/userRecipe.html')" class="user-setting">
+                    <i class="fa-solid fa-plate-wheat"></i>User Dashboard</button>
+                <button onclick="window.open('./public-src/Assets/Homepage/html/profile.html')"><i
+                        class="fa-solid fa-gear"></i>User Settings</button>
+                <button class="logout"><i class="fa-solid fa-right-from-bracket"></i>Logout</button>
+                <a href="#"><i class="fa-solid fa-globe"></i> Community</a>
+            </div>
+            <i class="fa-solid fa-close" id="close-profile"></i>
+        </section>
+    </main>
+
+    <!---------- Footer Code ---------->
+    <footer>
+        <div class="footer1">
+            <div class="foot_logo">
+                <img src="./public-src/Assets/Homepage/assets/logo&profiles/recipe-logo.png">
+            </div>
+            <div class="foot_image">
+                <img src="./public-src/Assets/Homepage/assets/logo&profiles/foot_image.png">
+            </div>
+            <div class="foot_links">
+                <h6>Links</h6>
+                <a href="./Assets/blog-page/html/about.html">About Us</a>
+                <a href="#">Contact</a>
+                <a href="./Assets/blog-page/html/blogs.html">Blog</a>
+                <a href="./Assets/all-recipes/html/Recipes.html">Recipes</a>
+            </div>
+            <div class="foot_legal">
+                <h6>Legal</h6>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact</a>
+                <a href="#">Cookies</a>
+                <a href="#">Copyrights</a>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="copy_text">
+                <p>© Copyright 2025 | All Rights Reserved</p>
+            </div>
+            <div class="social_icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./public-src/Assets/Homepage/js/index.js"></script>
+</body>
+
+</html>

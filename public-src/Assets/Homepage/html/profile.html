@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/logo&profiles/recipe-logo.png" type="image/x-icon" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Css File -->
+    <link rel="stylesheet" href="../css/userProfile.css">
+    <title>User Profile</title>
+</head>
+
+<body>
+    <main>
+        <!---------- Full View Profile Code ---------->
+        <a href="/index.html">Back to home</a>
+        <section class="full_profile">
+            <div class="user_settings">
+                <div class="user_head">
+                    <h3>Profile</h3>
+                    <button class="update_user">
+                        <i class="fa-solid fa-pen"></i>
+                        Update Profile
+                    </button>
+                </div>
+                <div class="user_img">
+                    <input id="image" type="file" class="change_user_pic" style="opacity: 0;">
+                    <img id="img" id="profImg" src="/public-src/Assets/all-recipes/images/chef-pic1 2.png" class="user_pic">
+                    <p id="uploadBtn"><i class="fa-solid fa-camera"></i>Upload Img</p>
+                </div>
+                <div class="user_fields">
+                    <div class="username">
+                        <h6>Username</h6>
+                        <div class="field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" placeholder="Jane Doe" id="prof-username">
+                        </div>
+                    </div>
+                    <div class="usertag">
+                        <h6>User category</h6>
+                        <div class="field">
+                            <i class="fa-solid fa-tag"></i>
+                            <input type="text" placeholder="Master chef" id="prof-category">
+                        </div>
+                    </div>
+                    <div class="useremail">
+                        <h6>Email</h6>
+                        <div class="field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="Janee123@gmail.com" id="prof-email">
+                        </div>
+                    </div>
+                    <div class="userGender">
+                        <h6>Gender</h6>
+                        <div class="field">
+                            <i class="fa-solid fa-venus-mars"></i>
+                            <input type="text" placeholder="gender" id="prof-gender">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---------- Update profile form ---------->
+
+            <div class="change_profile_popup">
+                <form class="update_profile">
+                    <div class="update_img">
+                        <img src="../assets/logo&profiles/chef-pic1 2.png" class="user_pic">
+                        <input type="file" class="change_user_pic" style="opacity:0;">
+                    Update Pic
+                    </div>
+                    <div class="form_inputs">
+                        <input type="text" placeholder="Username" id="name">
+                        <input type="text" placeholder="Chef-category" id="category">
+                        <input type="text" placeholder="Chef-gender" id="gender">
+                        <input type="email" placeholder="Email" id="email">
+                    </div>
+                    <button type="submit" class="save_profile">Save profile</button>
+                </form>
+                <i class="fa-solid fa-close"></i>
+            </div>
+
+            <div class="social_accounts">
+                <h3>Connected Accounts</h3>
+                <img src="../assets/logo&profiles/google.png" alt="Google">
+                <div class="google">
+                    <p>Janee123@gmail.com</p>
+                    <button>Disconnect</button>
+                </div>
+                <img src="../assets/logo&profiles/facebook.png" alt="Facebook">
+                <div class="facebook">
+                    <h6>Facebook</h6>
+                    <button>Disconnect</button>
+                </div>
+            </div>
+
+            <div class="changePswd">
+                <h5>Update Password</h5>
+                <button id="changePswd"><i class="fa-solid fa-lock"></i>Change pssword</button>
+            </div>
+            <!---------- Change password popup ---------->
+
+            <div class="change_password">
+                <div class="change-password-section">
+                    <h5>Change Password</h5>
+                    <div class="field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="current-password" placeholder="Current Password">
+                    </div>
+                    <div class="field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="new-password" placeholder="New Password">
+                    </div>
+                    <div class="field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="confirm-password" placeholder="Confirm New Password">
+                    </div>
+                    <button id="change-password-btn">Update Password</button>
+                </div>
+                <i class="fa-solid fa-close"></i>
+            </div>
+
+            <div class="logout">
+                <h5>Logout</h5>
+                <button id="logoutUser"><i class="fa-solid fa-right-from-bracket"></i>Logout</button>
+            </div>
+
+            <div class="delete_account">
+                <h5>Delete Account</h5>
+                <button id="deleteUser"><i class="fa-solid fa-trash"></i>Delete Account</button>
+            </div>
+        </section>
+    </main>
+
+    <!---------- Footer Code ---------->
+    <footer>
+        <div class="footer1">
+            <div class="foot_logo">
+                <img src="../assets/logo&profiles/recipe-logo.png">
+            </div>
+            <div class="foot_image">
+                <img src="../assets/logo&profiles/foot_image.png">
+            </div>
+            <div class="foot_links">
+                <h6>Links</h6>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Blog</a>
+                <a href="#">Recipes</a>
+            </div>
+            <div class="foot_legal">
+                <h6>Legal</h6>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact</a>
+                <a href="#">Cookies</a>
+                <a href="#">Copyrights</a>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="copy_text">
+                <p>© Copyright 2025 | All Rights Reserved</p>
+            </div>
+            <div class="social_icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/userProfile.js"></script>
+</body>
+
+</html>
